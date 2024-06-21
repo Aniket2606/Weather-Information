@@ -33,7 +33,7 @@ const getWeather = () => {
     result.innerHTML = `<h3 class="msg">Please enter a city name</h3>`;
     return;
   }
-  const key = "28e63cfd4e856b07300fdfacafc7e9df";
+  const key = "key";
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${cityValue}&appid=${key}&units=metric`;
   cityRef.value = ""; // Clear the input field
   fetch(url)
